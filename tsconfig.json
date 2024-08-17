@@ -1,0 +1,18 @@
+{
+  "extends": ["astro/tsconfigs/strict", "./tsconfig.base.json"],
+  "compilerOptions": {
+    /* If NOT transpiling with TypeScript: */
+    "moduleResolution": "Bundler",
+    "module": "ESNext",
+    "noEmit": true,
+    /* React */
+    "jsx": "react-jsx",
+    "jsxImportSource": "react"
+  },
+  "include": ["src", "**/*.ts", "**/*.tsx"],
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+}
